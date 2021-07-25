@@ -12,7 +12,7 @@ inputs:
     required: true
 branding:
     icon: "check-circle"
-    color: "green""
+    color: "green"
 runs:
   using: "node12"
   main: "./dist/index.js"
