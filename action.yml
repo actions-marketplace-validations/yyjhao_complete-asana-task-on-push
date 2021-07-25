@@ -1,0 +1,18 @@
+name: "Complete asana task on push"
+description: "Github action to complete asana task on push"
+inputs:
+  asana-access-token:
+    description: "Asana Personal Access Token."
+    required: true
+  task-comment:
+    description: "Provide text, which will add a comment with the pull request link to the asana task."
+    required: true
+  project-id:
+    description: "ID of project to multi-home task to"
+    required: true
+branding:
+    icon: "check-circle"
+    color: "green""
+runs:
+  using: "node12"
+  main: "./dist/index.js"
